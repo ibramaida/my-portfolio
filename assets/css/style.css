@@ -254,7 +254,7 @@ li{
         display: grid;
         gap: .5em;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
     .featured {
@@ -283,16 +283,22 @@ li{
 
     .work-item figcaption {
         position: absolute;
-        top: 0;
+        top: 100%;
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, .7);
+        background: rgb(29, 29, 29, .7);
         color: #fff;
         padding: 1.5em;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        transition: top ease-out 250ms;
+    }
+
+    .work-item:hover figcaption,
+    .work-item:focus figcaption {
+        top: 0;
     }
 
     .work-title {
@@ -306,7 +312,7 @@ li{
     }
 
     .work-link {
-        color: var(--hover-color-2);
+        color: var(--hover-color);
         text-decoration: none;
     }
     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
