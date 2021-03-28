@@ -365,7 +365,22 @@ li{
 
     .header-one {
         background-image: url(/Images/work/projects-img/project1.png);
-        
+    }
+
+    .header-two {
+        background-image: url(/Images/work/projects-img/project2.png);
+    }
+
+    .header-three {
+        background-image: url(/Images/work/projects-img/project3.png);
+    }
+
+    .header-four {
+        background-image: url(/Images/work/projects-img/project4.png);
+    }
+
+    .header-five {
+        background-image: url(/Images/work/projects-img/project5.png);
     }
 
     .work-title-box {
