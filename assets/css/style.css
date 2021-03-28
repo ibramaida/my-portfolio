@@ -318,6 +318,99 @@ li{
         color: var(--hover-color);
         text-decoration: none;
     }
+
+    /* #################################### Modal ################################### */
+
+    .work-modal {
+        position: fixed;
+        top: 10vh;
+        bottom: 10vh;
+        left: 10vw;
+        right: 10vw;
+        background-color: var(--BG-navbar);
+        padding: 3em 2em;
+        z-index: 10;
+        box-shadow: 0 0 0 10em rgba(0, 0, 0, .5);
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        display: none;
+    }
+
+    .is-open {
+        display: block;
+    }
+
+    .close-modal {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        position: fixed;
+        top: 11vh;
+        left: 11vw;
+        cursor: pointer;
+    }
+
+    .close-modal i {
+        color: var(--hover-color-2);
+        
+    }
+
+    .work-header {
+        padding: 5em 0;
+        margin-bottom: 2em;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header-one {
+        background-image: url(/Images/work/projects-img/project1.png);
+        
+    }
+
+    .work-title-box {
+        background: rgba(10, 228, 195, .3);
+        padding: 3em;
+        width: 70%;
+        color: var(--BG-navbar);
+    }
+
+    .work-content {
+        width: 85%;
+        margin: 0 auto;
+        padding-bottom: 2em;
+        color: var(--font-color);
+    }
+
+    .work-content p {
+        padding-bottom: 1em;
+    }
+
+    .work-full-width {
+        width: 100vw !important;
+        max-width: initial;
+        height: 20vh;
+        
+        margin: 2em calc(50% - 50vw);
+        object-fit: cover;
+    }
+
+    .work-pull-left {
+        width: 65% !important;
+        float: left;
+        margin-right: 2em;
+    }
+
+    @keyframes modalIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @keyframes modalOut {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+    }
+    
     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
     #contact h2{
