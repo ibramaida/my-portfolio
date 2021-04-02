@@ -46,10 +46,21 @@ li{
         
         background: #181818;
     }
+
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
     
     .menu-items li{
-       padding-bottom: 1rem;
+       padding: .3rem;
        text-align: center;
+    }
+
+    .menu-items li.active{
+        border: 2px solid var(--hover-color);
+        border-radius: 50%;
     }
     
     .menu-items i{
@@ -126,7 +137,7 @@ li{
        /* margin: 0 auto; */
        position: relative;
        padding-bottom: 6rem;
-       padding-top: 2rem;
+       padding-top: 4rem;
    }
    #welcome{
     height: 100vh;
@@ -304,6 +315,7 @@ li{
 
     #contact h2{
         text-align: center;
+        padding: 2rem 0;
     }
     #contact form{
         display: inline-block;
@@ -370,17 +382,16 @@ li{
 
 /* Extra large devices (large laptops and desktops, 1600px and up) */
 @media only screen and (min-width: 1600px) {
-    .menu-items li{
-        padding-bottom: 2rem;
+    /* .menu-items li{
+        
         text-align: center;
-     }
+     } */
     #welcome, #about, #skills, #work, #contact{
         max-width: 1200px;
         margin: 0 auto;
         /* margin: 0 auto; */
         position: relative;
-        padding-bottom: 6rem;
-        padding-top: 2rem;
+        padding: 6rem 0;
     }
     #welcome{
         height: 100vh;
@@ -396,8 +407,14 @@ li{
             flex-direction: row;
             align-items: center;
         }
-        
+    #contact {
+        margin: 4rem auto 6rem;
+    }
     
+    #contact h2 {
+        margin: 3rem 0;
+    }
+        
     }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -427,13 +444,13 @@ li{
     .menu-items{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 1.5rem;
     }
     .social-itmes{
         display: flex;
     }
     .menu-items li{
-        padding: 0 1rem;
+        
         text-align: center;
      }
      
@@ -588,22 +605,31 @@ li{
         transition: all .2s ease-in;
         overflow: hidden;
     }
+
     .open{
         max-height: 8rem;
     }
+
     .nav-top{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
+
     .logo img{
         width: 70%;
         margin-top: 10px;
     }
+
    .nav-bottom{
        padding: 1.5rem 0;
    }
+
+   .menu-items {
+       justify-content: space-between;
+   }
+
    .social-itmes{
        display: none;
    }
@@ -611,6 +637,7 @@ li{
    a[data-hover]::after{
        display: none;
    }
+
    /* +++++++++++++++++++++++++++++++++++++welcome++++++++++++++++++++++++++++ */
    #welcome, #about, #skills, #work, #contact{
     width: 100%;
