@@ -54,20 +54,18 @@ li{
     }
     
     .menu-items li{
-       padding: .3rem;
        text-align: center;
     }
 
-    .menu-items li.active{
-        border: 2px solid var(--hover-color);
-        border-radius: 50%;
+    .menu-items li.active .scroll{
+        color: var(--hover-color);
     }
     
-    .menu-items i{
+    .menu-items .scroll{
         font-size: 1.5rem;
         color: var(--font-color);
     }
-    .menu-items i:hover{
+    .menu-items .scroll:hover{
         color: var(--hover-color);
     }
     
