@@ -229,42 +229,84 @@ li{
     }
 
     /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-    
-    #skills h2{
+    #skills h2 {
         text-align: center;
     }
 
     #skills p{
-        /* text-align: center; */
+        text-align: center; 
         width: 60%;
-        margin: 0 auto;
-        padding-bottom: 1rem;
-    }
+       margin: 0 auto;
+       padding-bottom: 1rem;
+   }
 
-    .skills-row{
-        
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 4%;
-    }
-
-    .skill{
-        width: 20%;
+    .skills {
+        margin-top: 2rem;
+        padding: 0 2rem;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .skill p{
-        width: 100% !important;
-        color: var(--hover-color) !important;
-    }
-
-    .skill img{
+    .progress-bar-container {
         width: 100%;
-        height: 80%;
     }
+
+    .progress-bar-container:not(:last-child){
+    margin-bottom: 50px;
+    }
+
+    .progress-bar-container h3 {
+    font-family: 'Lato', sans-serif;
+    color: var(--font-color);
+    letter-spacing: 1px;
+    font-size: 20px;
+    }
+
+    .progress-bar {
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+    border: 1px solid #565656;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--hover-color);
+    }
+
+    .percentage {
+    display: block;
+    height: 100%;
+    background-color: var(--hover-color-2);
+    border-radius: 5px;
+    animation: progress 1500ms ease-in 1;
+    }
+
+    .html {
+    width: 75%;
+    }
+
+    .css {
+    width: 90%;
+    }
+
+    .javascript {
+    width: 65%;
+    }
+
+    .reactJs {
+    width: 55%;
+    }
+
+    .figma {
+    width: 60%;
+    }
+
+    @keyframes progress {
+    from {
+        width: 0;
+    }
+    }
+
 
     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -812,31 +854,15 @@ li{
         padding-bottom: 1rem;
     }
 
-    .skills-row{
-        
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 4%;
+    .skills {
+        padding: 0 1rem;
     }
 
-    .skill{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+    .progress-bar-container h3{
+        font-size: 1rem;
     }
 
-    .skill p{
-        width: 100% !important;
-        color: var(--hover-color) !important;
-    }
 
-    .skill img{
-        width: 100%;
-        height: 80%;
-    }
 
     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++work++++++++++++++++++++++++++++++++ */
 
