@@ -1,7 +1,8 @@
 const sliders = document.querySelectorAll('.slide-in');
 
 const aboutOptions = {
-   threshold: 0 
+   threshold: 0,
+   rootMargin: "0px 0px -400px 0px"
 };
 const slideOnScroll = new IntersectionObserver(function(entries, slideOnScroll) {
     entries.forEach(entry => {
