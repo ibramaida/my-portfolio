@@ -125,10 +125,8 @@ li{
    #welcome, #about, #skills, #work, #contact{
        max-width: 1200px;
        margin-left: 10%;
-       /* margin: 0 auto; */
        position: relative;
-       padding-bottom: 6rem;
-       padding-top: 4rem;
+       padding: 0 0 4rem;
    }
 
    #welcome{
@@ -401,7 +399,9 @@ li{
     }
 
     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
+    #contact {
+        margin-bottom: 20rem;
+    }
     #contact h2{
         text-align: center;
         padding: 2rem 0;
@@ -483,7 +483,7 @@ li{
         max-width: 1200px;
         margin: 0 auto;
         position: relative;
-        padding: 6rem 0;
+        padding: 0 0 5rem;
     }
 
     #welcome{
@@ -502,7 +502,7 @@ li{
     }
 
     #contact {
-        margin: 4rem auto 6rem;
+        margin-bottom: 18rem;
     }
     
     #contact h2 {
@@ -588,7 +588,7 @@ li{
         margin-left: 0;
         margin: 0 auto;
         position: relative;
-        padding: 6rem 2rem;
+        padding: 0 1rem 3rem;
         
     }
 
@@ -672,6 +672,9 @@ li{
     }
 
     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    #contact {
+        margin-bottom: 18rem;
+    }
 
     #contact h2{
         text-align: center;
@@ -845,7 +848,6 @@ li{
         font-family: 'Roboto', sans-serif;
         font-size: 1.5rem;
         color: #fff;
-        /* padding-bottom: 1rem;  */
     }
 
     .about-text p, #skills p{
@@ -961,6 +963,9 @@ li{
     }
     
     /* ++++++++++++++++++++++++++++++++++++++++++++++++++contact++++++++++++++++++++++++++++ */
+    #contact {
+        margin-bottom: 20rem;
+    }
     
     #contact{
         padding: 4.5rem 1rem;
